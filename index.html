@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Filtro</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div>
+        <div class="card-container">
+          <span>Conversão</span>
+          <div>Condutor 2AWG CAA</div>
+          <div style="display: flex; align-items: flex-end; margin-top: 10px">
+            <label style="display: flex; flex-direction: column">
+              Peso:
+              <input type="number" name="peso" style="width: 60px; height: 20px; border: none; background-color: #cfcfcf;" />
+            </label>
+  
+            <span style="margin: 0 10px; font-size: 15px; font-style: italic"
+              >0,254</span
+            >
+  
+            <label style="display: flex; flex-direction: column">
+              Metro:
+              <input type="number" name="metro" style="width: 60px; height: 20px; border: none; background-color: #cfcfcf;" />
+            </label>
+          </div>
+        </div>
+  
+        <div class="card-container">
+          <span>Sobre</span>
+          <div>Peso: 2500kg</div>
+        </div>
+      </div>
+      
+   
+      <div class="card-container">
+        <span>Codigos</span>
+        <div class="barra-filtro">
+          <span>Filtro:</span>
+          <input
+            id="filter-input"
+            type="text"
+            placeholder="Codigo ou Descrição"
+          />
+        </div>
+
+        <div class="card">
+          <ul id="codigos-list"></ul>
+        </div>
+
+        <div class="lista_vazia" id="lista_vazia" style="display: none">
+          <label>Nenhum item encontrado</label>
+        </div>
+      </div>
+      <div class="card-container">
+        <span>Recentes</span>
+        <ul id="historico-list"></ul>
+      </div>
+
+
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
