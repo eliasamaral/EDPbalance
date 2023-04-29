@@ -1,1 +1,1 @@
-https://eliasamaral.github.io/filterEDP/
+https://eliasamaral.github.io/EDPbalance/
