@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Filtro</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Filtro</title>
 
-    <div class="container">
-      <div>
-        <!-- <div class="card-container">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGQG66WTQ5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QGQG66WTQ5');
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div>
+      <!-- <div class="card-container">
           <span>Conversão</span>
           <div>Condutor 2AWG CAA</div>
           <div style="display: flex; align-items: flex-end; margin-top: 10px">
@@ -37,23 +45,19 @@
             </label>
           </div>
         </div> -->
-<!--   
+      <!--   
         <div class="card-container">
           <span>Sobre</span>
           <div>Peso: 2500kg</div>
         </div>
       </div> -->
-      
-   
+
+
       <div class="card-container">
         <span>Codigos</span>
         <div class="barra-filtro">
           <span>Filtro:</span>
-          <input
-            id="filter-input"
-            type="text"
-            placeholder="Codigo ou Descrição"
-          />
+          <input id="filter-input" type="text" placeholder="Codigo ou Descrição" />
         </div>
 
         <div class="card">
@@ -72,5 +76,6 @@
 
     </div>
     <script type="module" src="script.js"></script>
-  </body>
+</body>
+
 </html>
